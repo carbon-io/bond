@@ -14,7 +14,7 @@
   "main": "lib/bond.js",
   "engines": { "node": ">= 0.5.2" },
   "dependencies" : {
-    "carbon-client": "git+ssh://git@github.com:carbon-io/carbon-client-node.git#v0.0.2"
+    "carbon-client": "git+ssh://git@github.com:carbon-io/carbon-client-node.git"
   },
   "preferGlobal": false
 }
