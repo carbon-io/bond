@@ -1,6 +1,6 @@
 {
   "name": "@carbon-io/bond",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Bond",
   "keywords": ["bonds", "carbon-io"],
   "contributors": [
@@ -14,7 +14,7 @@
   "main": "lib/bond.js",
   "engines": { "node": ">= 0.5.2" },
   "dependencies" : {
-    "@carbon-io/carbon-client-node": "carbon-io/carbon-client-node.git#v0.2.2"
+    "@carbon-io/carbon-client-node": "~0.2.3"
   },
   "preferGlobal": false
 }
