@@ -1,4 +1,3 @@
 [submodule "carbon-client-node"]
 	path = docs/packages/carbon-client-node
 	url = https://github.com/carbon-io/carbon-client-node.git
-    branch = integrate-docs
