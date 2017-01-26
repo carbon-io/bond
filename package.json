@@ -1,6 +1,6 @@
 {
     "name": "@carbon-io/bond", 
-    "version": "0.2.9", 
+    "version": "0.3.0", 
     "description": "Bond", 
     "keywords": [
         "bonds", 
@@ -17,8 +17,11 @@
     "engines": {
         "node": ">= 0.5.2"
     }, 
+    "_dependencies": {
+        "@carbon-io/carbon-client-node": "0.3.x"
+    },
     "dependencies": {
-        "@carbon-io/carbon-client-node": "0.2.x"
+        "@carbon-io/carbon-client-node": "carbon-io/carbon-client-node#use-fibers-0.4.x-branch"
     }, 
     "preferGlobal": false
 }
