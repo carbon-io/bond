@@ -17,11 +17,8 @@
     "engines": {
         "node": ">= 0.5.2"
     }, 
-    "_dependencies": {
+    "dependencies": {
         "@carbon-io/carbon-client-node": "0.3.x"
     },
-    "dependencies": {
-        "@carbon-io/carbon-client-node": "carbon-io/carbon-client-node#use-fibers-0.4.x-branch"
-    }, 
     "preferGlobal": false
 }
