@@ -25,6 +25,7 @@ var resolveModuleTests = o({
           assert.equal(err.lineNumber, 4)
           assert.equal(err.columnNumber, 8)
           assert(err.message.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
+          assert(err.stack.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
           return true
         })
       }
@@ -43,6 +44,7 @@ var resolveModuleTests = o({
           assert.equal(err.lineNumber, 4)
           assert.equal(err.columnNumber, 8)
           assert(err.message.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
+          assert(err.stack.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
           return true
         })
       }
