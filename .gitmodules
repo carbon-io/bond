@@ -1,6 +1,6 @@
 [submodule "carbon-client-node"]
 	path = docs/packages/carbon-client-node
-	url = https://github.com/carbon-io/carbon-client-node.git
+	url = git@github.com:carbon-io/carbon-client-node.git
 [submodule "docs/common"]
 	path = docs/common
 	url = git@github.com:carbon-io/docs-common.git
