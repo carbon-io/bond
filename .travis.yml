@@ -16,5 +16,5 @@ git:
     submodules: false
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
 before_install:
-    - find . -name '.gitmodules' | xargs sed -i '' -e 's/git@github.com:/https:\/\/github.com\//'
+    - find . -name '.gitmodules' | xargs sed -i 's/git@github.com:/https:\/\/github.com\//'
     - git submodule update --init --recursive
