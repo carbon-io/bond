@@ -1,6 +1,6 @@
 {
     "name": "@carbon-io/bond", 
-    "version": "0.3.9", 
+    "version": "0.4.1", 
     "description": "Bond", 
     "keywords": [
         "bonds", 
@@ -19,12 +19,12 @@
         "node": ">=4.0.0"
     }, 
     "devDependencies": {
-        "@carbon-io/atom": "0.4.x", 
-        "@carbon-io/test-tube": "0.3.x"
+        "@carbon-io/atom": "0.5.x", 
+        "@carbon-io/test-tube": "0.4.x"
     }, 
     "dependencies": {
         "syntax-error": "1.1.x", 
-        "@carbon-io/carbon-client-node": "0.3.x"
+        "@carbon-io/carbon-client-node": "0.4.x"
     }, 
     "scripts": {
         "test": "node test"
