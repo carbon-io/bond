@@ -5,8 +5,7 @@ var bondTests = o({
   _type: testtube.Test,
   name: 'BondTests',
   description: 'Bond tests',
-  tests: [require('./resolveModuleTests'),
-          require('@carbon-io/carbon-client-node').$Test]
+  tests: [require('./resolveModuleTests')]
 })
 
 module.exports = bondTests
