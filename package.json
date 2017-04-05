@@ -1,33 +1,33 @@
 {
-    "name": "@carbon-io/bond",
-    "version": "0.5.0",
-    "description": "Bond",
+    "name": "@carbon-io/bond", 
+    "version": "0.5.1", 
+    "description": "Bond", 
     "keywords": [
-        "bonds",
+        "bonds", 
         "carbon-io"
-    ],
+    ], 
     "contributors": [
-        "Will Shulman <will@objectlabs.com>",
+        "Will Shulman <will@objectlabs.com>", 
         "Greg Banks <greg@objectlabs.com>"
-    ],
+    ], 
     "repository": {
-        "type": "git",
+        "type": "git", 
         "url": "https://github.com/carbon-io/bond.git"
-    },
-    "main": "lib/bond.js",
+    }, 
+    "main": "lib/bond.js", 
     "engines": {
         "node": ">=4.0.0"
-    },
+    }, 
     "devDependencies": {
-        "@carbon-io/atom": "0.6.x",
+        "@carbon-io/atom": "0.6.x", 
         "@carbon-io/test-tube": "0.5.x"
-    },
+    }, 
     "dependencies": {
-        "syntax-error": "1.1.x",
+        "syntax-error": "1.1.x", 
         "@carbon-io/carbon-client-node": "0.5.x"
-    },
+    }, 
     "scripts": {
         "test": "node test"
-    },
+    }, 
     "preferGlobal": false
 }
