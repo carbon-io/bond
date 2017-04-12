@@ -1,12 +1,12 @@
-var o = require('@carbon-io/atom').o(module).main
+var __ = require('@carbon-io/fibers').__(module)
+var o = require('@carbon-io/atom').o(module)
 var testtube = require('@carbon-io/test-tube')
 
-var bondTests = o({
-  _type: testtube.Test,
-  name: 'BondTests',
-  description: 'Bond tests',
-  tests: [require('./resolveModuleTests')]
+__(function() {
+  module.exports = o.main({
+    _type: testtube.Test,
+    name: 'BondTests',
+    description: 'Bond tests',
+    tests: [require('./resolveModuleTests')]
+  })
 })
-
-module.exports = bondTests
-

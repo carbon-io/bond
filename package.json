@@ -19,6 +19,7 @@
         "node": ">=4.0.0"
     },
     "devDependencies": {
+        "@carbon-io/fibers": "0.7.x",
         "@carbon-io/atom": "0.7.x",
         "@carbon-io/test-tube": "0.6.x"
     },
