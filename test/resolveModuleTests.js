@@ -16,7 +16,7 @@ __(function() {
       o({
         _type: testtube.Test,
         name: 'ResolveModuleWithSyntaxErrorTest',
-        description: 'resolve a module with a syntax error and validate error object',
+        description: 'Resolve a module with a syntax error and validate error object',
         doTest: function() {
           assert.throws(function() {
             var mod = _o('./fixtures/syntaxError')
@@ -35,10 +35,29 @@ __(function() {
       o({
         _type: testtube.Test,
         name: 'ResolveModuleWithNestedSyntaxErrorTest',
-        description: 'resolve a module with a syntax error in nested calls to _o and validate error object',
+        description: 'Resolve a module with a syntax error in nested calls to _o and validate error object',
         doTest: function() {
           assert.throws(function() {
             var mod = _o('./fixtures/nestedSyntaxError')
+          }, function(err) {
+            assert(err.error instanceof SyntaxError)
+            assert(err instanceof SyntaxError)
+            assert(err instanceof errors.ResolveModuleSyntaxError)
+            assert.equal(err.lineNumber, 4)
+            assert.equal(err.columnNumber, 8)
+            assert(err.message.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
+            assert(err.stack.match(/.+\/fixtures\/syntaxError\.js:4/) !== null)
+            return true
+          })
+        }
+      }),
+      o({
+        _type: testtube.Test,
+        name: 'ResolveModuleWithRequiredNestedSyntaxErrorTest',
+        description: 'Resolve a module with a syntax error being required in nested _o calls and validate error object',
+        doTest: function() {
+          assert.throws(function() {
+            var mod = _o('./fixtures/requiredNestedSyntaxError')
           }, function(err) {
             assert(err.error instanceof SyntaxError)
             assert(err instanceof SyntaxError)
