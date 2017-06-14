@@ -21,7 +21,8 @@
     "devDependencies": {
         "@carbon-io/fibers": "0.7.x", 
         "@carbon-io/atom": "0.7.x", 
-        "@carbon-io/test-tube": "0.6.x"
+        "@carbon-io/test-tube": "0.6.x",
+        "sinon": "2.1.x"
     }, 
     "dependencies": {
         "syntax-error": "1.1.x", 
